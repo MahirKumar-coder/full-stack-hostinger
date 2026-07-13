@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 const App = () => {
   const [message, setMessage] = useState("")
   useEffect(() => {
-    fetch("http://localhost:4000/api/message")
+    fetch("http://3.85.173.166:4000/api/message")
     .then(res => res.json())
     .then(data => setMessage(data.message))
     .catch((err) => {
